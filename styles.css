@@ -75,6 +75,15 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 20px;
+	width: 100%;
+}
+
+.left-buttons {
+	margin-right: auto;
+}
+
+.right-buttons {
+	margin-left: auto;
 }
 
 .btn {
@@ -96,10 +105,6 @@
 	border: 1px solid #ccc;
 }
 
-.right-buttons {
-	display: flex;
-	gap: 40px;
-}
 
 @media screen and (max-width: 600px) {
 	.form-container {
