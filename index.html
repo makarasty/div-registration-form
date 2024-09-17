@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Registration Form</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<fieldset class="form-container">
+		<h1 class="form-title">User registration form</h1>
+		<div class="form-content">
+			<div class="input-group">
+				<label for="login">Login</label>
+				<div class="input-wrapper">
+					<input type="text" id="login" value="testuset" />
+				</div>
+			</div>
+			<div class="input-group invalid">
+				<label for="email">Email</label>
+				<div class="input-wrapper">
+					<input type="text" id="email" value="aaa@bbb" />
+					<div class="error-message">Invalid email address</div>
+				</div>
+			</div>
+			<div class="input-group">
+				<label for="password">Password</label>
+				<div class="input-wrapper">
+					<input type="password" placeholder="*********" id="password" />
+				</div>
+			</div>
+			<div class="input-group">
+				<label for="confirm-password">Confirm password</label>
+				<div class="input-wrapper">
+					<input type="password" placeholder="*********" id="confirm-password" />
+				</div>
+			</div>
+		</div>
+		<div class="btn-group">
+			<button id="btn-to-login" class="btn btn_secondary">To login</button>
+			<div class="right-buttons">
+				<button id="btn-submit" class="btn btn_primary">Register</button>
+				<button id="btn-clear" class="btn btn_secondary">Clear</button>
+			</div>
+		</div>
+	</fieldset>
+</body>
+
+</html>

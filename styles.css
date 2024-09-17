@@ -1,0 +1,162 @@
+.form-container {
+	font-family: Arial, sans-serif;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 600px;
+	padding: 20px;
+	margin: auto;
+	box-shadow: 2px 2px 10px rgba(165, 165, 165, 0.1);
+	box-sizing: border-box;
+}
+
+.form-title {
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.form-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-group {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 15px;
+}
+
+.input-group label {
+	font-size: 16px;
+	width: 30%;
+	min-width: 120px;
+	margin-right: 10px;
+	padding-top: 10px;
+}
+
+.input-wrapper {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-group input {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.input-group input:focus {
+	outline: none;
+	border-color: #007bff;
+}
+
+.input-group.invalid input {
+	border: 2px solid red;
+}
+
+.input-group.invalid label {
+	color: red;
+	font-weight: bold;
+}
+
+.error-message {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.btn-group {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.btn {
+	padding: 10px 30px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn_primary {
+	background-color: rgb(0, 87, 216);
+	color: white;
+}
+
+.btn_secondary {
+	background-color: #f8f9fa;
+	color: black;
+	border: 1px solid #ccc;
+}
+
+.right-buttons {
+	display: flex;
+	gap: 40px;
+}
+
+@media screen and (max-width: 600px) {
+	.form-container {
+		padding: 15px;
+	}
+
+	.form-title {
+		font-size: 20px;
+	}
+
+	.input-group {
+		flex-direction: column;
+	}
+
+	.input-group label {
+		width: 100%;
+		margin-bottom: 5px;
+		padding-top: 0;
+	}
+
+	.input-wrapper {
+		width: 100%;
+	}
+
+	.btn-group {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.right-buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 10px;
+	}
+
+	.btn {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.form-container {
+		padding: 10px;
+	}
+
+	.form-title {
+		font-size: 18px;
+	}
+
+	.input-group input {
+		font-size: 14px;
+	}
+
+	.btn {
+		font-size: 14px;
+		padding: 8px 16px;
+	}
+}
